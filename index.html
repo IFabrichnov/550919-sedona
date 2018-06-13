@@ -88,8 +88,28 @@
       <section class="search">
           <h3>Заинтересовались?</h3>
           <h4>Укажитепредполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в седоне</h4>
-      <span class="search-title">Поиск гостиницы в Седоне</span>
+      <!--- <span class="search-title">Поиск гостиницы в Седоне</span> -->
       <!-- Здесь будет форма записи-->
+      <form action="/echo" method="post">
+        <label for="search">Поиск гостиницы в Седоне</label> 
+            <div class="date">
+            <label for="day-in">Дата заезда</label> 
+            <input type="date"  name="day-in" id="day-in" tabindex="0">
+        </div>
+        <div class="date">
+            <label for="day-out">Дата выезда</label> 
+            <input type="date" name="day-out" id="day-out" tabindex="0">
+        </div>
+        <div class="people">
+          <label for="people">Взрослые</label> 
+          <input type="number" min="1" max="31" name="people" tabindex="0">
+      </div>
+      <div class="kids">
+        <label for="kids">Дети</label> 
+        <input type="number" min="1" max="31" name="people" id="kids" tabindex="0">
+    </div>
+        <button class="button" type="submit" tabindex="0">Найти</button>
+    </form> 
        </section>
     </main>
       <!-- Footer Подвал -->
@@ -97,14 +117,14 @@
       <p>#VISITSEDONA</p>
       <div class="footer-social">
           <ul>
-              <li><a class="social-button" href="#">Twitter</a></li>
-              <li><a class="social-button" href="#">Facebook</a></li>
-              <li><a class="social-button" href="#">Youtube</a></li>
+              <li><a class="social-button" href="#" tabindex="0">Twitter</a></li>
+              <li><a class="social-button" href="#" tabindex="0">Facebook</a></li>
+              <li><a class="social-button" href="#" tabindex="0">Youtube</a></li>
             </ul>
           </div>
       <p class="footer-copyright">
               <b>WEBSITE by</b> 
-              <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="button" href="https://htmlacademy.ru" tabindex="0">HTML Academy</a>
       </p>
      </footer>
   </body>
