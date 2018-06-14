@@ -26,8 +26,8 @@
    <section class="filters">
        <!-- Форма -->
        <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value">
-        <div class="filter-first">
-          <p>Инфраструктура:</p>
+        <fieldset class="filter-first">
+          <legend>Инфраструктура:</legend>
           <input type="checkbox" name="pool" id="filter-pool" checked tabindex="0">
             <label for="filter-pool">
               Бассейн
@@ -40,9 +40,10 @@
             <label for="filter-wifi">
               Wi-fi
             </label>
-        </div>
-        <div class="filter-second">
-          <p>Тип-жилья:</p>
+          </fieldset>
+        
+        <fieldset class="filter-second">
+          <legend>Тип-жилья:</legend>
           <input type="checkbox" name="hotel" id="filter-hotel" checked tabindex="0">
             <label for="filter-hotel">
               Гостиница
@@ -55,12 +56,12 @@
             <label for="filter-apartments">
               Апартаменты
             </label>
-        </div>
-        <div class="value">
-          <label for="value-filter">Стоимость в сутки (Р):</label>
+        </fieldset>
+        <fieldset class="value">
+          <legend for="value-filter">Стоимость в сутки (Р):</legend>
            <input type="range" id="value-filter" name="value" min="1" max="4000" step="1" tabindex="0"> 
-         </div>
-         <button type="submit">Показать</button>
+           <button type="submit">Показать</button>
+        </fieldset>
       </form>
    </section>
    <!-- Список домов -->
