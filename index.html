@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+  <div class="wrapper">
   <body>
     <!-- Шапка сайта -->
-    <header class="main-header">
+    <header class="main-header-index">
     <nav class="main-navigation">
-      <ul class="site-navigation1">
+      <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="Photo.html">Фото и видео</a></li>
         <li>
@@ -20,6 +23,8 @@
        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
+    <img src="img/png/index-head.png" alt="Название сайта">
+    
   </header>
   <!-- Основное меню -->
   <main class="container">
@@ -41,15 +46,18 @@
       <!-- Блок 2 (жилье, еда, сувениры) -->
       <div class="second-block">
           <div class="container3">
+            <img src="img/svg-sedona/icon-1.svg" alt="Жилье">
             <h2>Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="container4">
+            <img src="img/svg-sedona/icon-2.svg" alt="Еда">
             <h2>Еда</h2>
             <p> Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="container5">
-            <h2> Сувениры</h2>
+            <img src="img/svg-sedona/icon-3.svg" alt="Сувениры">
+            <h2>Сувениры</h2>
             <p> Не только китайского, но и местного производства!</p>
           </div>
       </div>
@@ -67,17 +75,17 @@
 
       <!-- Блок 4 (Три пункта) -->
       <div class="fourth-block">
-        <div class="container7">
+        <div class="container8">
           <h2>Небольшая площадь</h2>
           <p>-№3-</p>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
-        <div class="container8">
+        <div class="container9">
           <h2> Красивая дорога</h2>
           <p>-№4-</p>
           <p> Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-        <div class="container9">
+        <div class="container10">
           <h2>Мало туристов</h2>
           <p> -№5-</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -91,24 +99,26 @@
       <!--- <span class="search-title">Поиск гостиницы в Седоне</span> -->
       <!-- Здесь будет форма записи-->
       <form action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="search">Поиск гостиницы в Седоне</h2> 
-            <div class="date">
+        <div class="search-container">
+        <button class="button1" type="submit" tabindex="0">Поиск гостиницы в Седоне</button>
+        <p class="search-info">
             <label for="day-in">Дата заезда</label> 
             <input type="date"  name="day-in" id="day-in" tabindex="0">
-        </div>
-        <div class="date">
+        </p>
+        <p class="search-info">
             <label for="day-out">Дата выезда</label> 
             <input type="date" name="day-out" id="day-out" tabindex="0">
-        </div>
-        <div class="people">
+        </p>
+        <p class="search-info">
           <label for="people">Взрослые</label> 
           <input type="number" min="1" max="31" name="people" tabindex="0">
-      </div>
-      <div class="kids">
+        </p>
+      <p class="search-info">
         <label for="kids">Дети</label> 
         <input type="number" min="1" max="31" name="people" id="kids" tabindex="0">
-    </div>
+      </p>
         <button class="button" type="submit" tabindex="0">Найти</button>
+      </div>
     </form> 
        </section>
     </main>
@@ -128,4 +138,5 @@
       </p>
      </footer>
   </body>
+</div>
 </html>
