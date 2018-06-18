@@ -1,11 +1,11 @@
 .wrapper {
     color: #f2f2f2;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width:1200px;
+   
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -15,27 +15,21 @@ body {
 }
 
 .main-header-index {
-    background-image: url("..img/jpg/head-background.jpg");
+    background-image: url(../img/jpg/head-background.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     width: 1200px;
     height:510px;
-}
-
-.main-header-index {
-    background-image: url("..img/jpg/head-background.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    width: 1200px;
-    height:510px;
+    background-color: #81b3d2;
 }
 
 .main-header-catalog {
-    background-image: url("..img/jpg/catalog-background.jpg");
+    background-image: url(../img/jpg/catalog-background.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     width: 1200px;
     height:510px;
+    background-color: #81b3d2;
 }
 
 a {
@@ -55,7 +49,11 @@ a {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: #81b3d2;
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: #b2b2b2;
 }
 
 .caption1 {
@@ -63,6 +61,7 @@ a {
     line-height: 26px;
     font-size: 21px;
     text-align: center;
+    font-weight: bolder;
 }
 
 .caption2 {
@@ -76,6 +75,10 @@ a {
     color: #ffffff;
     line-height: 21px;
     background-color: #81b3d2;
+}
+
+.container1 h2 { 
+    font-weight: bolder;
 }
 
 .second-block {
@@ -114,16 +117,23 @@ a {
 }
 
 .button:active {
-    background-color: #5496bd;
+    background-color: #7aadcb;
 }
+
 
 .search h3, h4 {
     color: #000000;
     text-align: center;
-    background-image: url("..img/jpg/map.jpg");
-    background-repeat: no-repeat;
+ 
 }
 
+.search h3 {
+    font-size: 30px;
+}
+
+.search h4 {
+    font-size: 14px;
+}
 .button1 {
     font: inherit;
     text-align: center;
@@ -146,6 +156,8 @@ a {
 .search-container {
     color: #000000;
     text-align: center;
+    background-image: url(../img/jpg/map.jpg);
+    background-repeat: no-repeat;
 }
 
 .search-container input {
@@ -161,6 +173,7 @@ a {
 
   .footer-social {
   text-align: center;
+  color:#000000;
 }
 
 .footer-social ul {
@@ -219,4 +232,17 @@ a {
 .filter-second,
 .value {
     border: none;
+}
+
+.name-navigation {
+    color: #000000;
+}
+
+.name-navigation:hover,
+.name-navigation:focus {
+  color: #81b3d2;
+}
+
+.name-navigation:active {
+    color: #b2b2b2;
 }
