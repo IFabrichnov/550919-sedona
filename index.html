@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -95,54 +95,63 @@
     </article>
       <!-- Секция с подбором гостиниц-->
       <section class="search">
-          <div class="search-header">
-              <b>Заинтересовались?</b>
-              <p>Укажите предполагаемые даты поездки, <br> 
-                 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-              <a class="search-hotel" href="#">
-                  <span>Поиск гостиницы в седоне</span>
-              </a>
-          </div>
-          <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="flight-date arrival">
-                  <label for="arrival-date">Дата заезда:</label>
-                  <input type="text" id="arrival-date" name="arrival-date" placeholder="24 апреля 2017">
-                  <a class="calendar-icon" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-                          <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#a9a9a9"/>
-                          <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#a9a9a9"/> 
-                      </svg>
-                  </a>
-              </div>
-              <div class="flight-date departure">
-                  <label for="departure-date">Дата выезда:</label>
-                  <input type="text" id="departure-date" name="departure-date" placeholder="4 июля 2017">
-                  <a class="calendar-icon" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-                          <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#a9a9a9"/>
-                          <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#a9a9a9"/>
-                      </svg>
-                  </a>
-              </div>
-              <div class="half-field">
-                  <div class="half-width">
-                      <label for="adults">Взрослые:</label>
-                      <input type="text" id="adults" name="adults" placeholder="2">
-                      <button class="count-down" type="button"></button>
-                      <button class="count-up" type="button"></button>
-                  </div>
-                  <div class="half-width">
-                      <label for="children">Дети:</label>
-                      <input type="text" id="children" name="children" placeholder="0">
-                      <button class="count-down" type="button"></button>
-                      <button class="count-up" type="button"></button>
-                  </div>
-              </div>
-              <input type="submit" name="search-btn" value="Найти">
-          </form> 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419040.6176465849!2d-112.07477710155358!3d34.86238732755934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1530108827556" width="1200" height="593" style="border:0" allowfullscreen>
-          </iframe>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <div class="caption-container">
+          <b class="interesting-search">Заинтересовались?</b>
+          <p class="search-instruction">Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <a href="#" class="button search-button">Поиск гостиницы в Седоне</a>
       </section>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419040.6176465849!2d-112.07477710155358!3d34.86238732755934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1530108827556" width="1200" height="593" style="border:0" allowfullscreen></iframe>
+        <p><img src="img/map.png" width="1200" height="747" alt="Карта Седоны"></p>
+        <article class="modal modal-search">
+          <form class="hotel-search" method="get" action="https://echo.htmlacademy.ru">
+            <div class="search-option search-option-large">
+              <label class="search-name" for="arrival">Дата заезда:</label>
+              <div class="label-row">
+                <input class="search-input" type="text" id="arrival" name="arrival" value="24 апреля 2017">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </div>  
+            </div>
+            <div class="search-option search-option-large">
+              <label class="search-name" for="departure">Дата выезда:</label>
+              <div class="label-row">  
+                <input class="search-input" type="text" id="departure" name="departure" value="4 июля 2017">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </div>  
+            </div>
+            <div class="search-row">
+              <div class="search-option search-option-small">
+                <label class="search-name" for="adult">Взрослые:</label>
+                <div class="label-row">
+                  <button  class="number-btn minus" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <input class="search-input" type="text" id="adult" name="adult" value="2">
+                  <button  class="number-btn plus" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+              <div class="search-option search-option-small">
+                <label class="search-name" for="child">Дети:</label>
+                <div class="label-row">  
+                  <button  class="number-btn minus" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <input class="search-input" type="text" id="child" name="child" value="0">
+                  <button  class="number-btn plus" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button search-button-submit" type="submit">Найти</button>
+          </form>
+        </article>
+      </div>
     </main>
       <!-- Footer Подвал -->
     <footer class="main-footer main-footer-index">
